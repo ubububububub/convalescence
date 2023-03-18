@@ -1,30 +1,29 @@
-import { render, hydrate } from "react-dom";
 import ReactDOM from "react-dom/client";
 import { HelmetProvider } from "react-helmet-async";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import GlobalStyles from "./styles/GlobalStyles";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const container = document.getElementById("root");
+const root = ReactDOM.createRoot(container);
 
-if (root.hasChildNodes()) {
-  hydrate(
+if (container.hasChildNodes()) {
+  ReactDOM.hydrateRoot(
+    container,
     <BrowserRouter>
       <GlobalStyles />
       <HelmetProvider>
         <App />
       </HelmetProvider>
-    </BrowserRouter>,
-    root
+    </BrowserRouter>
   );
 } else {
-  render(
+  root.render(
     <BrowserRouter>
       <GlobalStyles />
       <HelmetProvider>
         <App />
       </HelmetProvider>
-    </BrowserRouter>,
-    root
+    </BrowserRouter>
   );
 }
