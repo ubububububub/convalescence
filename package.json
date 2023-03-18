@@ -54,6 +54,10 @@
       "/familycare",
       "/visitingcare",
       "/visitingbath"
+    ],
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox"
     ]
   }
 }
