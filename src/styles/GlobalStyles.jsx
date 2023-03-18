@@ -12,6 +12,7 @@ const style = css`
 
   html {
     font-size: 16px;
+    scroll-behavior: smooth;
   }
 
   select,

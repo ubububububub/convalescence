@@ -1,22 +1,20 @@
 import styled from "@emotion/styled";
 
-export const Container = styled.section`
-  margin-top: 96px;
-  padding-bottom: 144px;
+export const Container = styled.div`
+  margin-top: 32px;
 `;
 
 export const Title = styled.h2`
   border-bottom: 1px solid #d9d9d9;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 40px;
-  word-break: keep-all;
 `;
 
 export const Paragraph = styled.p`
-  margin-top: 16px;
+  margin-top: 12px;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 27px;
+  color: #6b7684;
   word-break: keep-all;
+  line-height: 22px;
 `;

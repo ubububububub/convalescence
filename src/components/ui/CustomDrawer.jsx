@@ -1,4 +1,4 @@
-import { forwardRef } from "react";
+import { forwardRef, Fragment } from "react";
 import {
   Box,
   Divider,
@@ -9,8 +9,6 @@ import {
   ListItemIcon,
   ListItemText,
 } from "@mui/material";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
 import { useNavigate } from "react-router-dom";
 
 export const CustomDrawer = forwardRef(
@@ -39,27 +37,22 @@ export const CustomDrawer = forwardRef(
               { text: "방문목욕서비스", link: "/visitingbath" },
               { text: "가족요양서비스", link: "/familycare" },
             ].map(({ text, link }, index) => (
-              <ListItem key={text} disablePadding>
-                <ListItemButton onClick={() => navigate(link)}>
-                  <ListItemIcon>
+              <Fragment key={text}>
+                <ListItem disablePadding>
+                  <ListItemButton
+                    onClick={() => {
+                      onDrawerClick();
+                      navigate(link);
+                    }}
+                  >
+                    {/* <ListItemIcon>
                     {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                  </ListItemIcon>
-                  <ListItemText primary={text} />
-                </ListItemButton>
-              </ListItem>
-            ))}
-          </List>
-          <Divider />
-          <List>
-            {["All mail", "Trash", "Spam"].map((text, index) => (
-              <ListItem key={text} disablePadding>
-                <ListItemButton>
-                  <ListItemIcon>
-                    {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                  </ListItemIcon>
-                  <ListItemText primary={text} />
-                </ListItemButton>
-              </ListItem>
+                  </ListItemIcon> */}
+                    <ListItemText primary={text} />
+                  </ListItemButton>
+                </ListItem>
+                <Divider />
+              </Fragment>
             ))}
           </List>
         </Box>

@@ -11,9 +11,18 @@ export const Title = styled.h2`
   line-height: 40px;
 `;
 
-export const Paragraph = styled.p`
+export const ExplanationList = styled.ul`
   margin-top: 12px;
+`;
+
+export const ExplanationItem = styled.li`
   font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
   color: #6b7684;
   word-break: keep-all;
+
+  & + & {
+    margin-top: 8px;
+  }
 `;

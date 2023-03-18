@@ -1,0 +1,40 @@
+{
+  "short_name": "국민건강재가복지센터",
+  "name": "국민건강재가복지센터",
+  "icons": [
+    {
+      "src": "https://res.cloudinary.com/dhfkiaac8/image/upload/v1679139777/%EA%B5%AD%EB%AF%BC%EA%B1%B4%EA%B0%95%EC%9E%AC%EA%B0%80%EB%B3%B5%EC%A7%80%EC%84%BC%ED%84%B0/favicon/favicon_16x16_n2lzbf.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "https://res.cloudinary.com/dhfkiaac8/image/upload/v1679140562/%EA%B5%AD%EB%AF%BC%EA%B1%B4%EA%B0%95%EC%9E%AC%EA%B0%80%EB%B3%B5%EC%A7%80%EC%84%BC%ED%84%B0/favicon/favicon_24x24_zvedkw.png",
+      "sizes": "24x24",
+      "type": "image/png"
+    },
+    {
+      "src": "https://res.cloudinary.com/dhfkiaac8/image/upload/v1679139550/%EA%B5%AD%EB%AF%BC%EA%B1%B4%EA%B0%95%EC%9E%AC%EA%B0%80%EB%B3%B5%EC%A7%80%EC%84%BC%ED%84%B0/favicon/favicon_32x32_vpv74e.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "https://res.cloudinary.com/dhfkiaac8/image/upload/v1679140562/%EA%B5%AD%EB%AF%BC%EA%B1%B4%EA%B0%95%EC%9E%AC%EA%B0%80%EB%B3%B5%EC%A7%80%EC%84%BC%ED%84%B0/favicon/favicon_64x64_ayedd5.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "https://res.cloudinary.com/dhfkiaac8/image/upload/v1679139776/%EA%B5%AD%EB%AF%BC%EA%B1%B4%EA%B0%95%EC%9E%AC%EA%B0%80%EB%B3%B5%EC%A7%80%EC%84%BC%ED%84%B0/favicon/favicon_192x192_oubz6x.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://res.cloudinary.com/dhfkiaac8/image/upload/v1679140633/%EA%B5%AD%EB%AF%BC%EA%B1%B4%EA%B0%95%EC%9E%AC%EA%B0%80%EB%B3%B5%EC%A7%80%EC%84%BC%ED%84%B0/favicon/favicon_512x512_znq5op.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

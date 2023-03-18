@@ -16,4 +16,20 @@ export const Paragraph = styled.p`
   font-weight: 700;
   color: #6b7684;
   word-break: keep-all;
+  line-height: 22px;
+`;
+
+export const ExplanationList = styled.ol`
+  margin-top: 12px;
+`;
+
+export const ExplanationItem = styled.li`
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  word-break: keep-all;
+
+  & + & {
+    margin-top: 16px;
+  }
 `;
