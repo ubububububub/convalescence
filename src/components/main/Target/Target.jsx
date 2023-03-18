@@ -1,4 +1,4 @@
-import { Strong } from "../../styles/common";
+import { Strong } from "../../../styles/common";
 import { Container, Content, SubParagraph, SubTitle, Title } from "./styled";
 
 export default function Target() {

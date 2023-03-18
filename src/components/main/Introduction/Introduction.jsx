@@ -1,10 +1,5 @@
-import { Strong } from "../../styles/common";
-import {
-  Container,
-  Paragraph,
-  Title,
-  Button,
-} from "../../components/Introduction/styled";
+import { Strong } from "../../../styles/common";
+import { Container, Paragraph, Title, Button } from "./styled";
 
 export default function Introduction() {
   return (

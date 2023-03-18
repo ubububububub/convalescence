@@ -31,18 +31,23 @@ export const CustomDrawer = forwardRef(
       >
         <Box sx={{ width: 250 }}>
           <List>
-            {["인사말", "Starred", "Send email", "Drafts"].map(
-              (text, index) => (
-                <ListItem key={text} disablePadding>
-                  <ListItemButton onClick={() => navigate("/")}>
-                    <ListItemIcon>
-                      {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                    </ListItemIcon>
-                    <ListItemText primary={text} />
-                  </ListItemButton>
-                </ListItem>
-              )
-            )}
+            {[
+              { text: "홈", link: "/" },
+              { text: "인사말", link: "/greeting" },
+              { text: "장기요양서비스", link: "/longcare" },
+              { text: "방문요양서비스", link: "/visitingcare" },
+              { text: "방문목욕서비스", link: "/visitingbath" },
+              { text: "가족요양서비스", link: "/familycare" },
+            ].map(({ text, link }, index) => (
+              <ListItem key={text} disablePadding>
+                <ListItemButton onClick={() => navigate(link)}>
+                  <ListItemIcon>
+                    {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                  </ListItemIcon>
+                  <ListItemText primary={text} />
+                </ListItemButton>
+              </ListItem>
+            ))}
           </List>
           <Divider />
           <List>

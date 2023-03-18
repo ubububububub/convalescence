@@ -1,4 +1,4 @@
-import { Strong } from "../../styles/common";
+import { Strong } from "../../../styles/common";
 import { Container, Paragraph, Title } from "./styled";
 
 export default function Price() {

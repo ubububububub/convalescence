@@ -1,19 +1,18 @@
 import styled from "@emotion/styled";
 
 export const Container = styled.div`
-  margin-top: 120px;
+  margin-top: 56px;
 `;
 
-export const Title = styled.h3`
+export const Title = styled.h2`
   font-weight: 700;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 22px;
+  line-height: 27px;
 `;
 
 export const Paragraph = styled.p`
-  margin-top: 10px;
+  margin-top: 12px;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
+  color: #6b7684;
   word-break: keep-all;
 `;

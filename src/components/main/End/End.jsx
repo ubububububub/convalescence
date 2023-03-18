@@ -1,4 +1,4 @@
-import { Strong } from "../../styles/common";
+import { Strong } from "../../../styles/common";
 import { Container } from "./styled";
 
 export default function End() {
