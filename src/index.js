@@ -3,9 +3,12 @@ import { HelmetProvider } from "react-helmet-async";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import GlobalStyles from "./styles/GlobalStyles";
+import ChannelService from "../src/common/channelTalk";
 
 const container = document.getElementById("root");
 const root = ReactDOM.createRoot(container);
+
+ChannelService.loadScript();
 
 if (container.hasChildNodes()) {
   ReactDOM.hydrateRoot(

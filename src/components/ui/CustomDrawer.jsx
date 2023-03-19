@@ -6,7 +6,6 @@ import {
   List,
   ListItem,
   ListItemButton,
-  ListItemIcon,
   ListItemText,
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
@@ -45,9 +44,6 @@ export const CustomDrawer = forwardRef(
                       navigate(link);
                     }}
                   >
-                    {/* <ListItemIcon>
-                    {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                  </ListItemIcon> */}
                     <ListItemText primary={text} />
                   </ListItemButton>
                 </ListItem>

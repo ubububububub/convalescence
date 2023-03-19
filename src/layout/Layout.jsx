@@ -12,6 +12,7 @@ import {
   FooterButton,
 } from "./styled";
 import MenuIcon from "@mui/icons-material/Menu";
+import Side from "../components/ui/side/Side";
 
 export default function Layout() {
   const [isMenuShowing, setIsMenuShowing] = useState(false);
@@ -23,6 +24,7 @@ export default function Layout() {
 
   return (
     <Wrapper>
+      <Side />
       <LayoutContainer ref={drawerContainerRef}>
         <Header>
           <MenuIcon
