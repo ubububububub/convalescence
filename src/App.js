@@ -5,6 +5,7 @@ import FamilyCare from "./pages/familyCare/FamilyCare";
 import Greeting from "./pages/greeting/Greeting";
 import Home from "./pages/home/Home";
 import LongCare from "./pages/longCare/LongCare";
+import NotFound from "./pages/NotFound/NotFound";
 import VisitingBath from "./pages/visitingBath/VisitingBath";
 import VisitingCare from "./pages/visitingCare/VisitingCare";
 
@@ -144,6 +145,7 @@ function App() {
           <Route path="/familycare" element={<FamilyCare />} />
           <Route path="/visitingcare" element={<VisitingCare />} />
           <Route path="/visitingbath" element={<VisitingBath />} />
+          <Route path="/*" element={<NotFound />} />
         </Route>
       </Routes>
     </>
