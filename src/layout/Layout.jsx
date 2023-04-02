@@ -10,9 +10,11 @@ import {
   Footer,
   FooterTitle,
   FooterButton,
+  FooterTel,
 } from "./styled";
 import MenuIcon from "@mui/icons-material/Menu";
 import Side from "../components/ui/side/Side";
+import { Strong } from "../styles/common";
 
 export default function Layout() {
   const [isMenuShowing, setIsMenuShowing] = useState(false);
@@ -48,6 +50,9 @@ export default function Layout() {
         </Main>
         <Footer>
           <FooterTitle>장기요양등급신청 접수</FooterTitle>
+          <FooterTel>
+            상담문의 <Strong>051-635-0086</Strong>
+          </FooterTel>
           <FooterButton>접수하기</FooterButton>
         </Footer>
       </LayoutContainer>

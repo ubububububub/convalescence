@@ -100,8 +100,16 @@ export const FooterTitle = styled.h3`
   text-align: center;
 `;
 
+export const FooterTel = styled.strong`
+  margin-top: 8px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 20px;
+  text-align: center;
+`;
+
 export const FooterButton = styled.button`
-  margin-top: 22px;
+  margin-top: 16px;
   padding: 12px 32px;
   font-weight: 700;
   font-size: 16px;
